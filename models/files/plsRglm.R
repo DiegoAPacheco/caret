@@ -29,7 +29,7 @@ modelInfo <- list(label = "Partial Least Squares Generalized Linear Models ",
                     ## Intercept parameters if needed
                     theDots <- list(...)
                     if(any(names(theDots) == "modele")) {
-                      mod <- plsrRglm::plsRglm(y, x, 
+                      mod <- plsRglm::plsRglm(y, x, 
                                      	       nt = param$nt, 
                                                pvals.expli = param$alpha.pvals.expli < 1,
                                                sparse  = param$alpha.pvals.expli < 1,
